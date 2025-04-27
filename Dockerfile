@@ -8,7 +8,7 @@ RUN mkdir -p /usr/src/app && cd /usr/src/app
 WORKDIR /usr/src/app
 
 # Copy only the required files to reduce image size
-COPY ./app /usr/src/app
+COPY . /usr/src/app
 
 # Expose the port so the application can be accessed externally
 EXPOSE 8000
